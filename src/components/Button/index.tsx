@@ -1,12 +1,13 @@
-import { ButtonContainer, ButtonVariant } from "./Button.styles"
+import { ButtonContainer, ButtonSizes, ButtonVariant } from "./Button.styles"
 
 interface ButtonProps {
   variant: ButtonVariant
+  size?: ButtonSizes
 }
 
-export const Button = ({ variant }: ButtonProps) => {
+export const Button = ({ variant, size = 'sm' }: ButtonProps) => {
   return (
-    <ButtonContainer variant={variant}>
+    <ButtonContainer variant={variant} size={size}>
       Click Here
     </ButtonContainer>
   )
