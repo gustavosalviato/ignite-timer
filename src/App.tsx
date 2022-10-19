@@ -1,11 +1,11 @@
 import { Button } from "./components/Button"
+import { ThemeProvider } from "styled-components"
+import { defaultTheme } from "./styles/themes/default"
 
 export const App = () => {
   return (
-    <div>
-      <Button variant="primary" size="sm" />
-      <Button variant="danger" size='md' />
-      <Button variant="success" size="lg" />
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <Button variant="primary" size="lg" />
+    </ThemeProvider>
   )
 }
