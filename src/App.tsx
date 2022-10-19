@@ -1,7 +1,11 @@
+import { Button } from "./components/Button"
+
 export const App = () => {
   return (
     <div>
-      App
+      <Button variant="primary"/>
+      <Button variant="danger"/>
+      <Button variant="success"/>
     </div>
   )
 }
