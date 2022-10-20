@@ -6,6 +6,8 @@ export const App = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       Teste
+
+      <button>asdsadadasd</button>
       <GlobalStyle />
     </ThemeProvider>
   )
