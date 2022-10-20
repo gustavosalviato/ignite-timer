@@ -1,13 +1,11 @@
-import { ThemeProvider } from "styled-components"
-import { defaultTheme } from "./styles/themes/default"
-import { GlobalStyle } from "./styles/themes/global"
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from './styles/themes/default'
+import { GlobalStyle } from './styles/themes/global'
 
 export const App = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       Teste
-
-      <button>asdsadadasd</button>
       <GlobalStyle />
     </ThemeProvider>
   )
