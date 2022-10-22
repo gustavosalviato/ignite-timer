@@ -1,16 +1,16 @@
 import { Play } from "phosphor-react"
-import { HomeContainer, CountDownContainer, FormContainer, Separator, ButtonContainer } from "./styles"
+import { HomeContainer, CountDownContainer, FormContainer, Separator, ButtonContainer, BasicInput, MinutesAmoutInput, TaskInput } from "./styles"
 
 export const Home = () => {
   return (
     <HomeContainer>
       <form>
         <FormContainer>
-          <label htmlFor="task">Vou trabalher em</label>
-          <input type="text" />
+          <label htmlFor="task">Vou trabalhar em</label>
+          <TaskInput type="text" placeholder="Dê um nome para seu projeto" />
 
           <label htmlFor="task">durante</label>
-          <input type="text" />
+          <MinutesAmoutInput type="text" placeholder="00" />
 
           <span>Minutos</span>
         </FormContainer>
