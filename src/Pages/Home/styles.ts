@@ -63,32 +63,6 @@ export const Separator = styled.div`
 
 `
 
-export const ButtonContainer = styled.button`
-    display: flex;    
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 100%;
-    padding: 1rem 0;
-
-    color: ${props => props.theme.white};
-    background: ${props => props.theme["green-500"]};
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    transition: 0.4;
-
-    &:not(:disabled):hover{
-        background: ${props => props.theme["green-700"]};
-    }
-
-    &:disabled{
-        opacity: 0.7;
-        cursor: not-allowed;
-    }
-    
-`
-
 
 export const BasicInput = styled.input`
     background: transparent;
@@ -119,4 +93,48 @@ export const MinutesAmoutInput = styled(BasicInput)`
 
 export const TaskInput = styled(BasicInput)`
     flex: 1;
+`
+
+
+
+export const BasicButton = styled.button`
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem 0;
+
+    color: ${props => props.theme["gray-100"]};
+    
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4;
+
+`
+
+
+export const StopButtonContainer = styled(BasicButton)`
+    background: ${props => props.theme["red-500"]};
+    
+    &:not(:disabled):hover{
+        background: ${props => props.theme["red-700"]};
+    }
+`
+
+
+
+export const StartButtonContainer = styled(BasicButton)`
+    background: ${props => props.theme["green-500"]};
+    
+    &:not(:disabled):hover{
+        background: ${props => props.theme["green-700"]};
+    }
+
+    &:disabled{
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+    
 `
