@@ -77,6 +77,16 @@ export const ButtonContainer = styled.button`
     outline: none;
     border: none;
     border-radius: 8px;
+    transition: 0.4;
+
+    &:not(:disabled):hover{
+        background: ${props => props.theme["green-700"]};
+    }
+
+    &:disabled{
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
     
 `
 

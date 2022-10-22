@@ -23,7 +23,7 @@ export const Home = () => {
           <span>0</span>
         </CountDownContainer>
 
-        <ButtonContainer>
+        <ButtonContainer disabled>
           <Play size={24} />
           Começar
         </ButtonContainer>
