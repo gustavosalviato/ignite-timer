@@ -9,6 +9,8 @@ color: ${props => props.theme["gray-100"]};
 display: flex;
 gap: 1rem;
 
+user-select: none;
+
 span{
     background-color: red;
     border-radius: 8px;
