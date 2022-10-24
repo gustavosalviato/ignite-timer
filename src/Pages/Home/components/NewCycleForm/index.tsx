@@ -23,10 +23,8 @@ export const NewCycleForm = () => {
 
             <label htmlFor="task">durante</label>
             <MinutesAmoutInput
-                type="number"
                 min={1}
                 max={60}
-                placeholder="00"
                 {...register('minutesAmount', { valueAsNumber: true })}
                 disabled={hasCycleActived}
             />
