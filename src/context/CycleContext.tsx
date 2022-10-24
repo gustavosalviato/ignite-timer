@@ -56,7 +56,6 @@ export const CyclesContextProvider = ({ children }: CyclesContextProviderProps) 
     setActiveCycleId(id)
     setSecondsAmountPassed(0)
 
-    // reset()
   }
 
   const markCurrentCycleAsFinished = () => {
