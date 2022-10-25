@@ -25,11 +25,7 @@ export const cyclesReducer = (state: CyclesState, action: any) => {
         draft.cycles.push(action.payload.newCycle)
         draft.activeCycleId = action.payload.newCycle.id
       })
-      // return {
-      //   ...state,
-      //   cycles: [...state.cycles, action.payload.newCycle],
-      //   activeCycleId: action.payload.newCycle.id
-      // }
+
     }
 
     case ActionTypes.INTERRUPT_CURRENT_CYCLE: {
@@ -49,18 +45,6 @@ export const cyclesReducer = (state: CyclesState, action: any) => {
         draft.cycles[currentCycleIndex].interruptDate = new Date()
       })
 
-      // return {
-      //   ...state,
-      //   cycles: state.cycles.map((cycle) => {
-      //     if (cycle.id === state.activeCycleId) {
-      //       return { ...cycle, interruptDate: new Date() }
-      //     } else {
-      //       return cycle
-      //     }
-      //   }),
-
-      //   activeCycleId: null
-      // }
     }
 
     case ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED: {
@@ -78,18 +62,7 @@ export const cyclesReducer = (state: CyclesState, action: any) => {
         draft.activeCycleId = null
         draft.cycles[currentCycleIndex].finishedDate = new Date()
       })
-      // return {
-      //   ...state,
-      //   cycles: state.cycles.map((cycle) => {
-      //     if (cycle.id === state.activeCycleId) {
-      //       return { ...cycle, finishedDate: new Date() }
-      //     } else {
-      //       return cycle
-      //     }
-      //   }),
 
-      //   activeCycleId: null
-      // }
     }
 
     default:
